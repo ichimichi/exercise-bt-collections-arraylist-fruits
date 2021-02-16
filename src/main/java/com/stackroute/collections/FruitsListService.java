@@ -17,10 +17,10 @@ public class FruitsListService {
         }
 
         for (String fruit : fruitNames.trim().split(",")) {
-            if (fruitList.size() > 0 && searchFruitInListIgnoreCase(fruitList, fruit )==-1) {
+            if (fruitList.size() > 0 && searchFruitInListIgnoreCase(fruitList, fruit) == -1) {
                 fruitList.add(fruit);
                 System.out.println(fruit);
-            }else if(fruitList.size()==0){
+            } else if (fruitList.size() == 0) {
                 fruitList.add(fruit);
             }
         }
